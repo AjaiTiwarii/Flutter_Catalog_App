@@ -1,3 +1,4 @@
 # first_app
-Flutter tutorial
+Flutter tutorial.
+
 A new Flutter project.
