@@ -1,5 +1,6 @@
 import 'package:first_app/pages/LoginPage.dart';
 import 'package:first_app/utils/routes.dart';
+import 'package:first_app/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/Home_Page.dart';
@@ -16,12 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(                               // "Material App" refers to a specific type of widget that's used as the root of your application.provides the basic structure and visual design elements
 
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple,
-      fontFamily: GoogleFonts.lato().fontFamily
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark
-      ),
+      theme: MyTheme.lightTheme,
+      //theme: MyTheme.darkTheme,               // cannot use the same parameter in argument again
       debugShowCheckedModeBanner: false,
       initialRoute: "/home",
       routes: {

@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 // fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold,
+                color: Colors.black,
                 ),
             ),
           )
